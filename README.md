@@ -23,7 +23,7 @@ Proyecto práctico donde implementamos una landing page funcional desde cero, ap
 
 </td>
 <td align="center" valign="middle" width="320">
-  <img src="./imgREADME/logo_Q-ERO.png" alt="Logo Q-ERO v3 Protocol" width="270">
+  <img src="./img/logo_Q-ERO.png" alt="Logo Q-ERO v3 Protocol" width="270">
 </td>
 </tr>
 </table>
