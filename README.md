@@ -84,4 +84,21 @@ SA-HA1/
 └── README.md          
 ```
 ## 📸 Imágenes de la Landingpage
+![Pantalla 1](img/main1.png)
+
+
+![Pantalla 2](img/main2.png)
+
+
+![Pantalla 3](img/main3.png)
+
+
+![Pantalla 4](img/main4.png)
+
+
+![Pantalla 5](img/main5.png)
+
+
+![Pantalla 6](img/main6.png)
+
 
