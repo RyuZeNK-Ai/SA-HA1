@@ -1,0 +1,98 @@
+/* Responsive - Mobile First */
+
+/* --- 1200px --- */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+/* --- 1024px --- */
+@media (max-width: 1024px) {
+  .hero-content,
+  .porque-content,
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav .nav-list {
+    gap: var(--espaciado-sm);
+  }
+
+  .footer-content {
+    align-items: center;
+  }
+
+  .footer-logo,
+  .footer-links,
+  .footer-redes {
+    text-align: center;
+  }
+}
+
+/* --- 768px --- */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: none;
+    background-color: var(--color-crema);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: var(--sombra-suave);
+    z-index: 999;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    padding: var(--espaciado-md);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaciado-sm);
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    color: var(--color-cafe);
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  .mobile-menu.active {
+    display: block;
+  }
+}
+
+/* --- 480px --- */
+@media (max-width: 480px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .btn-cta {
+    font-size: 0.95rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .testimonio blockquote {
+    font-size: 1rem;
+  }
+}
+
+/* Ocultar menú móvil por defecto (fuera de media queries, afecta a escritorio también) */
+.mobile-menu {
+  display: none;
+}

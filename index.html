@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SouLink - Plataforma de apoyo emocional preventiva en Chile. Contención anónima, recursos de autocuidado y comunidad segura." />
+    <meta name="keywords" content="salud mental, contención, SouLink, autocuidado, emocional, Chile" />
+    <meta name="author" content="SouLink" />
+    <title>SouLink | Contención emocional preventiva</title>
+
+    <!-- Tipografía alternativa a Gotham -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet" />
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/a2d9a4c42a.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+    
+    <!-- ============================================
+        HEADER / NAVBAR
+    ============================================ -->
+    <header class="main-header" role="banner">
+        <div class="container header-container">
+            <a href="#inicio" class="logo" aria-label="Ir al inicio">
+                <img src="img/logo 2.png" alt="Logo SouLink" />
+            </a>
+            <nav class="main-nav" role="navigation" aria-label="Menú principal">
+                <ul class="nav-list">
+                    <li class="dropdown">
+                        <a href="#servicios" class="dropdown-toggle">
+                            Servicios <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#servicios">Todos los Servicios</a></li>
+                            <li><a href="#contencion">Contención Anónima</a></li>
+                            <li><a href="#autocuidado">Recursos de Autocuidado</a></li>
+                            <li><a href="#foros">Foros Moderados</a></li>
+                            <li><a href="#derivacion">Derivación Responsable</a></li>
+                            <li><a href="#mapa">Mapa de Centros</a></li>
+                            <li><a href="#comunidad">Comunidad de Apoyo</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#porque" class="dropdown-toggle">
+                            ¿Por qué elegirnos? <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#porque">Ventajas Principales</a></li>
+                            <li><a href="#confidencialidad">Confidencialidad</a></li>
+                            <li><a href="#empatia">Enfoque Empático</a></li>
+                            <li><a href="#dignidad">Contención con Dignidad</a></li>
+                            <li><a href="#accesibilidad">Accesibilidad Total</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#beneficios" class="dropdown-toggle">
+                            Beneficios <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#beneficios">Todos los Beneficios</a></li>
+                            <li><a href="#comunidad-segura">Comunidad Segura</a></li>
+                            <li><a href="#bienestar">Bienestar Emocional</a></li>
+                            <li><a href="#escucha">Escucha Activa</a></li>
+                            <li><a href="#derivacion-etica">Derivación Ética</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#testimonios" class="dropdown-toggle">
+                            Testimonios <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#testimonios">Todos los Testimonios</a></li>
+                            <li><a href="#experiencias">Experiencias de Usuarios</a></li>
+                            <li><a href="#historias">Historias de Superación</a></li>
+                            <li><a href="#resultados">Resultados Comprobados</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#contacto" class="dropdown-toggle">
+                            Contacto <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#contacto">Formulario de Contacto</a></li>
+                            <li><a href="#emergencias">Contacto de Emergencia</a></li>
+                            <li><a href="#profesionales">Para Profesionales</a></li>
+                            <li><a href="#prensa">Prensa y Medios</a></li>
+                            <li><a href="#colaboraciones">Colaboraciones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú móvil" aria-controls="mobile-menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Menú móvil"></nav>
+    </header>
+
+    <!-- ============================================
+        HERO SECTION
+    ============================================ -->
+    <section class="hero" id="inicio">
+        <div class="container hero-content">
+            <div class="hero-text fade-in">
+                <h1>Tu espacio seguro de contención emocional</h1>
+                <p>SouLink te acompaña con empatía, confidencialidad y apoyo real.</p>
+                <a href="#contacto" class="btn-cta">Comienza ahora</a>
+            </div>
+            <div class="hero-img">
+                <img src="img/hero-bg.png" alt="Ilustración contención emocional" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+        SECCIÓN DE TARJETAS ESTILO MAZO
+    ============================================ -->
+    <section class="cards-section">
+        <div class="container">
+            <h2 class="section-title">Descubre Nuestras Iniciativas</h2>
+            
+            <div class="cards-deck">
+                <div class="card-wrapper card-1" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-face card-front">
+                            <div class="card-visual">
+                                <div class="decoration decoration-1"></div>
+                                <div class="decoration decoration-2"></div>
+                                <div class="star star-1">✦</div>
+                                <div class="star star-2">✦</div>
+                                <div class="card-emoji">☀️</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Atención con especialistas</h3>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <div class="card-back-header">
+                                <div class="card-back-emoji">☀️</div>
+                                <h3 class="card-back-title">Conversa con especialistas de salud mental</h3>
+                            </div>
+                            <div class="card-back-content">
+                                <p class="card-back-description">
+                                    Si necesitas ayuda, puedes recurrir a nuestros profesionales
+                                </p>
+                                <ul class="card-benefits">
+                                    <li>Atención psicológica</li>
+                                    <li>Atención psiquiátrica</li>
+                                    <li>Ejercicios de relajación</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-wrapper card-2" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-face card-front">
+                            <div class="card-visual">
+                                <div class="flower flower-1">🌸</div>
+                                <div class="flower flower-2">🌼</div>
+                                <div class="star star-1">✨</div>
+                                <div class="card-emoji">✌️</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Ejercicios para volver a la calma</h3>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <div class="card-back-header">
+                                <div class="card-back-emoji">✌️</div>
+                                <h3 class="card-back-title">Aprende técnicas para manejar tus emociones</h3>
+                            </div>
+                            <div class="card-back-content">
+                                <p class="card-back-description">
+                                    Encuentra calma profunda y serenidad a través de diversos ejercicios.
+                                </p>
+                                <ul class="card-benefits">
+                                    <li>Meditación mindfulness</li>
+                                    <li>Relajación progresiva</li>
+                                    <li>Gestión del estrés</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-wrapper card-3" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-face card-front">
+                            <div class="card-visual">
+                                <div class="decoration decoration-1"></div>
+                                <div class="star star-1">💫</div>
+                                <div class="star star-2">✦</div>
+                                <div class="card-emoji">🌸</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Juega y Aprende</h3>
+                            </div>
+                        </div>
+                        <div class="card-face card-back">
+                            <div class="card-back-header">
+                                <div class="card-back-emoji">🌸</div>
+                                <h3 class="card-back-title">Diversos juegos para conocerte y cuidarte</h3>
+                            </div>
+                            <div class="card-back-content">
+                                <p class="card-back-description">
+                                    Programa integral en base a juegos para equilibrar tu mente, cuerpo y espíritu.
+                                </p>
+                                <ul class="card-benefits">
+                                    <li>Autocuidado y Autocuidado</li>
+                                    <li>Reflexión y gratitud</li>
+                                    <li>Desarrollo personal</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+        SERVICIOS
+    ============================================ -->
+    <section class="servicios" id="servicios" aria-labelledby="titulo-servicios">
+        <div class="container">
+            <div class="servicios-intro">
+                <h2 id="titulo-servicios">Nuestros Servicios</h2>
+                <p class="servicios-descripcion">
+                    En SouLink ofrecemos diferentes formas de apoyo emocional para que encuentres la que mejor se adapte a tus necesidades. 
+                    Cada servicio está diseñado pensando en tu bienestar y privacidad.
+                </p>
+            </div>
+            
+            <div class="servicios-grid">
+                <article class="card-servicio" tabindex="0" data-modal="modal1">
+                    <img src="img/product-1.png" alt="Espacios anónimos de contención">
+                    <h3>Espacios anónimos de contención</h3>
+                </article>
+                <article class="card-servicio" tabindex="0" data-modal="modal2">
+                    <img src="img/product-2.png" alt="Recursos de autocuidado">
+                    <h3>Recursos de autocuidado</h3>
+                </article>
+                <article class="card-servicio" tabindex="0" data-modal="modal3">
+                    <img src="img/product-3.png" alt="Foros moderados">
+                    <h3>Foros moderados</h3>
+                </article>
+                <article class="card-servicio" tabindex="0" data-modal="modal4">
+                    <img src="img/product-4.png" alt="Derivación responsable">
+                    <h3>Derivación responsable</h3>
+                </article>
+                <article class="card-servicio" tabindex="0" data-modal="modal5">
+                    <img src="img/product-5.png" alt="Mapa de centros reales">
+                    <h3>Mapa de centros reales</h3>
+                </article>
+                <article class="card-servicio" tabindex="0" data-modal="modal6">
+                    <img src="img/product-6.png" alt="Comunidad de apoyo">
+                    <h3>Comunidad de apoyo</h3>
+                </article>
+            </div>
+            
+            <p class="servicios-nota">
+                Todos nuestros servicios son 100% confidenciales y están disponibles las 24 horas del día, los 7 días de la semana.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================
+        ¿POR QUÉ ELEGIRNOS?
+    ============================================ -->
+    <section class="porque" id="porque" aria-labelledby="titulo-porque">
+        <div class="container">
+            <div class="porque-header">
+                <h2 id="titulo-porque">¿Por qué elegir <span class="highlight">SouLink</span>?</h2>
+                <p class="porque-subtitle">La combinación perfecta de apoyo humano y tecnología</p>
+            </div>
+            
+            <div class="porque-content">
+                <div class="porque-razones">
+                    <div class="razon-item">
+                        <div class="razon-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <div class="razon-text">
+                            <h3>Seguridad Total</h3>
+                            <p>Confidencialidad 100% garantizada en cada conversación.</p>
+                        </div>
+                    </div>
+                    <div class="razon-item">
+                        <div class="razon-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="razon-text">
+                            <h3>Empatía Genuina</h3>
+                            <p>Escucha activa sin juicios, con comprensión real.</p>
+                        </div>
+                    </div>
+                    <div class="razon-item">
+                        <div class="razon-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <div class="razon-text">
+                            <h3>Dignidad Humana</h3>
+                            <p>Respetamos tu valor y derecho al bienestar emocional.</p>
+                        </div>
+                    </div>
+                    <div class="razon-item">
+                        <div class="razon-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="razon-text">
+                            <h3>Acceso Global</h3>
+                            <p>Conéctate desde cualquier lugar, a cualquier hora.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="porque-imagen">
+                    <div class="imagen-container">
+                        <img src="img/product3.png" alt="SouLink - Apoyo emocional accesible" />
+                        <div class="imagen-badge">
+                            <span class="badge-num">5,000+</span>
+                            <span class="badge-text">personas apoyadas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              <!-- SECCIÓN DE ESTADÍSTICAS ANIMADAS -->
+        <div class="porque-stats">
+            <div class="stat">
+                <div class="stat-num" data-target="85" data-suffix="%">0%</div>
+                <div class="stat-label">Satisfacción</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num" data-target="24" data-suffix="/7">0/7</div>
+                <div class="stat-label">Disponible</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num" data-target="100" data-suffix="%">0%</div>
+                <div class="stat-label">Confidencial</div>
+            </div>
+            <div class="stat"> <!-- Nueva estadística -->
+                <div class="stat-num" data-target="5000" data-suffix="+">0+</div>
+                <div class="stat-label">Personas apoyadas</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- ============================================
+        BENEFICIOS
+    ============================================ -->
+    <section class="beneficios" id="beneficios" aria-labelledby="titulo-beneficios">
+        <div class="container">
+            <h2 id="titulo-beneficios">Beneficios de usar SouLink</h2>
+            <div class="beneficios-grid">
+                <div class="beneficio fade-in">
+                    <div class="beneficio-icono">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Comunidad segura</h3>
+                    <p>Accede a un entorno protegido donde puedes compartir sin miedo.</p>
+                </div>
+                <div class="beneficio fade-in">
+                    <div class="beneficio-icono">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Bienestar emocional</h3>
+                    <p>Encuentra herramientas y recursos para cuidarte día a día.</p>
+                </div>
+                <div class="beneficio fade-in">
+                    <div class="beneficio-icono">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Escucha activa</h3>
+                    <p>Participa en espacios de contención con enfoque empático.</p>
+                </div>
+                <div class="beneficio fade-in">
+                    <div class="beneficio-icono">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Derivación ética</h3>
+                    <p>Conectamos con profesionales cuando se requiere ayuda especializada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+        TESTIMONIOS
+    ============================================ -->
+    <section class="testimonios" id="testimonios" aria-labelledby="titulo-testimonios">
+        <div class="container">
+            <h2 id="titulo-testimonios">Testimonios que inspiran</h2>
+            <div class="carrusel-testimonios">
+                <div class="testimonio activo">
+                    <img src="img/testimonio.png" alt="Testimonio de Camila R."/>
+                    <blockquote>
+                        "SouLink me ayudó a sentirme acompañada en los días más difíciles. Es un espacio seguro y humano."
+                    </blockquote>
+                    <p class="autor">Camila R. – Santiago</p>
+                </div>
+                <div class="testimonio">
+                    <img src="img/testimonio.png" alt="Testimonio de Felipe A."/>
+                    <blockquote>
+                        "Gracias a la plataforma encontré recursos útiles que me ayudaron a manejar mi ansiedad."
+                    </blockquote>
+                    <p class="autor">Felipe A. – Valparaíso</p>
+                </div>
+                <div class="testimonio">
+                    <img src="img/testimonio.png" alt="Testimonio de Antonia G."/>
+                    <blockquote>
+                        "Lo mejor es la empatía y respeto que se respira en cada espacio. Totalmente recomendable."
+                    </blockquote>
+                    <p class="autor">Antonia G. – Concepción</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ============================================
+    FORMULARIO DE CONTACTO CON IMAGEN
+============================================ -->
+<section class="contacto" id="contacto" aria-labelledby="titulo-contacto">
+    <div class="container">
+        <h2 id="titulo-contacto">Contáctanos</h2>
+        
+        <div class="contacto-contenido">
+            <!-- Columna izquierda: Imagen -->
+            <div class="contacto-imagen">
+                <img src="img/consejinsos.png" alt="Consejeros de SouLink brindando apoyo emocional" />
+                <div class="contacto-imagen-texto">
+                    <h3>Habla con nuestros consejeros</h3>
+                    <p>Nuestro equipo está disponible para escucharte y acompañarte en cada paso.</p>
+                </div>
+            </div>
+            
+            <!-- Columna derecha: Formulario -->
+            <div class="contacto-formulario">
+                <div class="form-header">
+                    <h3>Envíanos un mensaje</h3>
+                    <p>Te responderemos en menos de 24 horas</p>
+                </div>
+                
+                <form novalidate>
+                    <div class="campo-form">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" placeholder="Ej: María González" name="nombre" required />
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="ejemplo@email.com" name="email" required />
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" placeholder="+56912345678" name="telefono" required />
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label for="asunto">Motivo de contacto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="consulta">Consulta general</option>
+                            <option value="apoyo">Necesito apoyo emocional</option>
+                            <option value="profesional">Soy profesional y quiero colaborar</option>
+                            <option value="emergencia">Contacto de emergencia</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" placeholder="Describe cómo podemos ayudarte..." name="mensaje" rows="5" required></textarea>
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    
+                    <div class="campo-form checkbox">
+                        <input type="checkbox" id="privacidad" name="privacidad" required />
+                        <label for="privacidad">
+                            Acepto la <a href="#politica-privacidad">política de privacidad</a> y el tratamiento de mis datos.
+                        </label>
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn-enviar">
+                        <i class="fas fa-paper-plane"></i> Enviar mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Información adicional -->
+        <div class="contacto-info">
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h4>Horario de atención</h4>
+                    <p>24/7 - Los 365 días del año</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h4>Teléfono de emergencia</h4>
+                    <p>+56 9 1234 5678</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>Correo electrónico</h4>
+                    <p>hola@soulink.cl</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+    <!-- ============================================
+        FOOTER
+    ============================================ -->
+    <footer class="main-footer" role="contentinfo">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="img/logo 2.png" alt="Logo SouLink" />
+                <p>
+                    SouLink es una plataforma de contención emocional preventiva. 
+                    Creemos en la dignidad, la empatía y la accesibilidad para todos.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#porque">¿Por qué elegirnos?</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-redes">
+                <h4>Redes sociales</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-x-twitter"></i> X / Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2025 SouLink. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ============================================
+        JAVASCRIPT
+    ============================================ -->
+    <script src="assets/js/menu-mobile.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/cards.js"></script>
+    <script src="stadistics/js/cards.js"></script>
+
+</body>
+<script>
+// DEBUG TEMPORAL
+console.log('=== DEBUG INICIADO ===');
+console.log('¿document.body existe?', document.body ? 'SÍ' : 'NO');
+console.log('¿Hay .porque-stats?', document.querySelector('.porque-stats') ? 'SÍ' : 'NO');
+
+// Ver cada 100ms hasta encontrar la sección
+let checkCount = 0;
+const checkInterval = setInterval(() => {
+    checkCount++;
+    const section = document.querySelector('.porque-stats');
+    const stats = document.querySelectorAll('.stat-num');
+    
+    console.log(`Check ${checkCount}:`, {
+        section: section ? 'ENCONTRADA' : 'NO ENCONTRADA',
+        stats: stats.length
+    });
+    
+    if (section && stats.length > 0) {
+        clearInterval(checkInterval);
+        console.log('🎉 ¡SECCIÓN ENCONTRADA! Ejecutando animación...');
+        
+        // Animación inmediata
+        stats.forEach(stat => {
+            const target = parseInt(stat.getAttribute('data-target'));
+            const suffix = stat.getAttribute('data-suffix') || '';
+            let count = 0;
+            
+            stat.style.color = 'white'; // Temporal: ver si se aplica
+            
+            const interval = setInterval(() => {
+                count++;
+                stat.textContent = count + suffix;
+                
+                if (count >= target) {
+                    clearInterval(interval);
+                }
+            }, 10);
+        });
+    }
+    
+    if (checkCount > 50) { // Máximo 5 segundos
+        clearInterval(checkInterval);
+        console.error('⏰ TIMEOUT: No se encontró la sección después de 5 segundos');
+    }
+}, 100);
+</script>
+</html>

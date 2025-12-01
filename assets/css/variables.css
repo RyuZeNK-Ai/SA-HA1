@@ -1,0 +1,30 @@
+:root {
+  /* 🎨 Paleta adaptada a salud mental y contención emocional */
+  --color-fondo-base: #f3ede4;         /* Fondo principal: beige suave */
+  --color-fondo-claro: #f4f4f2;        /* Blanco grisáceo para tarjetas */
+  --color-acento-primario: #c8b7f1;    /* Lavanda: emocional, calmante */
+  --color-acento-secundario: #7ed7c1;  /* Verde agua: confianza y frescura */
+  --color-contraste-suave: #a3b9a5;    /* Verde salvia: equilibrio, grounding */
+  --color-texto-suave: #1e1d1d;        /* Negro suave para textos */
+  --color-borde-suave: #d7d3ce;        /* Gris piedra: para líneas y detalles */
+
+  /* 🎨 Sombras y bordes */
+  --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --radio-borde: 12px;
+
+  /* 📚 Tipografía */
+  --fuente-principal: 'Nunito', sans-serif;
+  --size-titulo: 3.125rem;     /* ~50px */
+  --size-subtitulo: 2.1875rem; /* ~35px */
+  --size-parrafo: 1.25rem;     /* ~20px */
+
+  /* 💠 Espaciado base */
+  --espaciado-xl: 6rem;
+  --espaciado-lg: 4rem;
+  --espaciado-md: 2rem;
+  --espaciado-sm: 1rem;
+  --espaciado-xs: 0.5rem;
+
+  /* ⏱ Animaciones */
+  --transicion-rapida: 0.3s ease-in-out;
+}
